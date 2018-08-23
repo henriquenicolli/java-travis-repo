@@ -13,9 +13,20 @@ import static org.junit.Assert.*;
  * @author Aluno
  */
 public class MedianaTeste {
-    
+    //projeto alterado
     @Test
     public void MedianaTeste() {
+        double[] array = {1,2,3,4};
+        Mediana m = new Mediana();
+        
+        double res = m.getMediana(array);
+        
+        assertEquals(2.5, res, 2.5);
+   
+    }
+    
+    @Test
+    public void MedianaTeste2() {
         double[] array = {1,2,3,4};
         Mediana m = new Mediana();
         
