@@ -16,8 +16,10 @@ public class Mediana {
    // private double array[];
     
     
-     public double getMediana(double[] array) {
-            
+     public double getMediana(double[] array) throws Exception {
+            if(array == null)
+                throw new Exception("vetor nao pode ser nulo");
+         
             Arrays.sort(array);         
             int tipo = array.length % 2;
 

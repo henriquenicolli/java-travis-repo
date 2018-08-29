@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 public class MedianaTest {
     
     @Test
-    public void MedianaTeste() {
+    public void MedianaTeste() throws Exception {
         double[] array = {1,2,3,4};
         Mediana m = new Mediana();
         
@@ -27,7 +27,7 @@ public class MedianaTest {
     }
     
     @Test
-    public void MedianaTeste2() {
+    public void MedianaTeste2() throws Exception {
         double[] array = {1,2,3,4};
         Mediana m = new Mediana();
         
@@ -38,7 +38,7 @@ public class MedianaTest {
     }
     
     @Test
-    public void MedianaTeste3() {
+    public void MedianaTeste3() throws Exception {
         double[] array = {1,2,3,4,5,6};
         Mediana m = new Mediana();
         
@@ -46,6 +46,17 @@ public class MedianaTest {
         
         assertEquals(3.5, res, 2.5);
    
+    }
+    
+    @Test(expected = Exception.class)
+    public void testaArrayNulo() throws Exception{
+        double[] array = null;
+        
+        Mediana m = new Mediana();
+        
+        double res = m.getMediana(array);
+        
+       
     }
     
 }
