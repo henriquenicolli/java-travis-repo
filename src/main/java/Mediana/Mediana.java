@@ -22,6 +22,9 @@ public class Mediana {
             
              if(array.length == 0)
                 throw new Exception("vetor nao pode ser vazio");
+             
+             if(array.length == 1)
+                throw new Exception("vetor nao pode ser vazio");
          
             Arrays.sort(array);         
             int tipo = array.length % 2;

@@ -70,4 +70,14 @@ public class MedianaTest {
        
     }
     
+    @Test(expected = Exception.class)
+    public void testaaArrayCom1Elemento() throws Exception{
+        double[] array = {1};
+        
+        Mediana m = new Mediana();
+        
+        double res = m.getMediana(array);
+        
+       
+    }
 }
