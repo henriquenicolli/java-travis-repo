@@ -37,4 +37,15 @@ public class MedianaTest {
    
     }
     
+    @Test
+    public void MedianaTeste3() {
+        double[] array = {1,2,3,4,5,6};
+        Mediana m = new Mediana();
+        
+        double res = m.getMediana(array);
+        
+        assertEquals(3.5, res, 2.5);
+   
+    }
+    
 }
